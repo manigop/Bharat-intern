@@ -12,8 +12,8 @@ const port = process.env.PORT || 3000;
 const username = process.env.MONGODB_USERNAME;
 const password = process.env.MONGODB_PASSWORD;
 
-mongoose.connect('mongodb+srv: //${username} :${password}@cluster0.fycqxx8.mongodb.net/registrationFormDB',{
- serverSelectionTimeoutMS: 5000}),
+mongoose.connect('mongodb+srv://${username}:${password}@cluster0.fycqxx8.mongodb.net/registrationFormDB',{
+ serverSelectionTimeoutMS: 5000,
 });
 
 const registrationSchema = new mongoose.Schema({
