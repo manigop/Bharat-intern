@@ -11,6 +11,7 @@ const port = process.env.PORT || 3000;
 
 const username = process.env.MONGODB_USERNAME;
 const password = process.env.MONGODB_PASSWORD;
+mongoose.connect('mongodb+srv://manigopalthota012:1ypHQeejfb1FEGrc@mani.udv6jpx.mongodb.net/?retryWrites=true&w=majority&appName=mani')
 
 mongoose.connect('mongodb+srv://${username}:${password}@cluster0.fycqxx8.mongodb.net/registrationFormDB',{
  serverSelectionTimeoutMS: 5000,
